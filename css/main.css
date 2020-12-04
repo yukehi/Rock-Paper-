@@ -1,0 +1,314 @@
+body{
+    background: rgb(133,124,255);
+    background: radial-gradient(circle, rgba(133,124,255,1) 0%, rgba(129,213,224,1) 100%);
+}
+
+
+.continor {
+    text-align: center;
+    display:flex;
+    justify-content:center;
+}
+
+.capsolle{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 0 0 ;
+}
+.hader-title{
+    border-color: white;
+    border-radius: 25px;
+    border-width: 5px;
+    border-style: solid;
+    width:70%;
+    height: 100%;
+    padding: 1%;
+    display: flex;
+}
+.score{
+    text-align: center;
+    margin: 3% 5% 3% 55%;
+    background-color:white;
+    width: 100px;
+    height: 80px;
+    border-radius:15px;
+    padding:1%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.Score-title{
+    margin: 0 0 0 3%;
+}
+.points{
+    margin: 3% 0 0 0;
+}
+.content{
+    margin: 0 3%;
+    color: white;
+}
+.content-title{
+    margin: 0 0 0 0;
+}
+.pantgram {
+    /* background-image: url('../images/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px; */
+    position: relative;
+    bottom:650px;
+    z-index: -10;
+}
+
+.icon {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border-width: 15px;
+    border-style: solid;
+    position: relative;
+    padding: 3%;
+
+}
+
+.inner-shadow {
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.icon:active {
+    transform: scale(0.9);
+}
+
+.icon-spock {
+    left: 30%;
+    bottom: 50px;
+    border-color: yellow;
+}
+.spock{
+    border-color: yellow;
+}
+.img-spock {
+    margin: 5% 0 0 20%;
+}
+
+.icon-lizard {
+    right: 15%;
+    bottom: 55px;
+    border-color: aqua;
+}
+.lizard{
+    border-color: aqua;
+}
+.img-lizard {
+    margin: 10% 0 0 5%;
+}
+
+.icon-paper {
+    right: 5%;
+    bottom: 20px;
+    border-color: purple;
+}
+.paper{
+    border-color: purple;
+}
+.img-paper {
+    margin: 10% 0 0 2%;
+}
+
+.icon-rock {
+    left: 65%;
+    bottom: 145px;
+    border-color: red;
+}
+.rock{
+    border-color: red;
+}
+.img-rock {
+    margin: 15% 0 0 0%;
+}
+
+.icon-scissors {
+    left: 75%;
+    bottom: 445px;
+    border-color: blue;
+}
+.scissors{
+    border-color: blue;
+}
+.img-scissors {
+    margin: 15% 0 0 15%;
+}
+
+.capsolle-battle{
+    display:flex;
+    
+    margin: 15% 0 0 0;
+    width:600px;
+    height: 100%;
+
+}
+.capsolle-area{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3% 0 0 0 ;
+}
+.title-area{
+    margin : 0 0 0 0 ;
+}
+.title-hader{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+.battle-player{
+    margin: 0 35% 0 05% ;
+    transform: scale(1.5);
+}
+.battle-enemy{
+    margin: 0 0 0 15% ;
+    transform: scale(1.5);
+}
+.btn{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius:150px;
+    right:40%;
+    background-color: white;
+    top:60%;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+.icon-battle {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border-width: 15px;
+    border-style: solid;
+
+}
+
+.winAnimtion{
+    -webkit-animation: blink-1 0.6s both;
+    animation: blink-1 0.6s both;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	animation: heartbeat 1.5s ease-in-out infinite both;
+
+}
+
+#icons{
+    margin: 15% 0 0 0;
+}
+@media screen and (max-width:450px) {
+    .icons{
+        transform: scale(0.6);
+        margin: 3% 0 0 0;
+        position: relative;
+        bottom: 125px;
+    }
+    .score{
+        margin: 1% 0 0 25%;
+    }
+    .content-title{
+        font-size: 1rem;
+    }
+}
+
+@-webkit-keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
