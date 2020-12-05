@@ -207,7 +207,7 @@ body{
     margin: 15% 0 0 0;
 }
 @media screen and (max-width:450px) {
-    .icons{
+    #icons{
         transform: scale(0.6);
         margin: 3% 0 0 0;
         position: relative;
@@ -218,6 +218,13 @@ body{
     }
     .content-title{
         font-size: 1rem;
+    }
+    .capsolle-area{
+        transform: scale(0.5);
+    }
+    .btn{
+        left: 75px;
+        top: 350px;
     }
 }
 
